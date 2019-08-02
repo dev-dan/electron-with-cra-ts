@@ -7,7 +7,7 @@
     "package": "rimraf release && yarn build && electron-builder build --publish never",
     "package-all": "rimraf release && yarn build && electron-builder build -mwl",
     "tslint": "tslint 'electron/**/*.ts?(x)' && tslint 'src/**/*.ts?(x)'",
-    "app:dev": "cross-env BROWSER=false ELECTRON=true react-scripts start",
+    "app:dev": "cross-env BROWSER=none ELECTRON=true react-scripts start",
     "app:build": "cross-env ELECTRON=true react-scripts build",
     "electron:compile": "tsc --project electron/tsconfig.json",
     "electron:dev": "cross-env NODE_ENV=development electron electron/main.js",
